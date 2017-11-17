@@ -1,0 +1,31 @@
+{
+    "name": "peterpostmann/resolve_uri",
+    "description": "Resolves relative urls, like a browser would",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Peter Postmann",
+            "email": "peter@postmann.org"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "peterpostmann/parse_uri": "^1.0.0",
+        "peterpostmann/fileuri": "^1.0.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.7",
+        "squizlabs/php_codesniffer": "~2.3"
+    },
+    "autoload": {
+        "files": [
+            "src/resolve_uri.php"
+        ]
+    },
+    "scripts": {
+        "test": "phpunit",
+        "cs": "phpcs --standard=psr2 src/",
+        "cf": "phpcbf --standard=PSR2 src/ "
+    }
+}
